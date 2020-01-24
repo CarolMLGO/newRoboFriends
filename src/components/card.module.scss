@@ -1,0 +1,15 @@
+.Card {
+    background: lightgreen;
+    /*border: 5px solid red;*/
+    margin: 2rem 1rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem rgba(black, .2);
+
+    &:hover {
+        /*filter: blur(1px) brightness(40%)*/
+        transform: scale(1.1);
+    }
+}
