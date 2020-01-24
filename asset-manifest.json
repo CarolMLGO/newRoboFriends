@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/newrobofriends/static/css/main.caed92ea.chunk.css",
+    "main.js": "/newrobofriends/static/js/main.a46b8692.chunk.js",
+    "main.js.map": "/newrobofriends/static/js/main.a46b8692.chunk.js.map",
+    "runtime-main.js": "/newrobofriends/static/js/runtime-main.22dfbc53.js",
+    "runtime-main.js.map": "/newrobofriends/static/js/runtime-main.22dfbc53.js.map",
+    "static/js/2.0388415b.chunk.js": "/newrobofriends/static/js/2.0388415b.chunk.js",
+    "static/js/2.0388415b.chunk.js.map": "/newrobofriends/static/js/2.0388415b.chunk.js.map",
+    "index.html": "/newrobofriends/index.html",
+    "precache-manifest.1e51cf6f53d2e27e32052c0c9f4f7ac5.js": "/newrobofriends/precache-manifest.1e51cf6f53d2e27e32052c0c9f4f7ac5.js",
+    "service-worker.js": "/newrobofriends/service-worker.js",
+    "static/css/main.caed92ea.chunk.css.map": "/newrobofriends/static/css/main.caed92ea.chunk.css.map",
+    "static/js/2.0388415b.chunk.js.LICENSE": "/newrobofriends/static/js/2.0388415b.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22dfbc53.js",
+    "static/js/2.0388415b.chunk.js",
+    "static/css/main.caed92ea.chunk.css",
+    "static/js/main.a46b8692.chunk.js"
+  ]
+}
