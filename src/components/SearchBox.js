@@ -4,7 +4,7 @@ import styles from './searchbox.module.scss';
 const SearchBox = ({ searchChange }) => {
     return (
         <div>
-            <input type="text" className={styles.search__input} placeholder="Search robots" onChange={searchChange}/>
+            <input aria-label="Search robots" type="text" className={styles.search__input} placeholder="Search robots" onChange={searchChange}/>
         </div>
     )
 };
