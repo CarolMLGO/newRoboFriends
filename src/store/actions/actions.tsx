@@ -1,6 +1,6 @@
 import { actionTypes } from './actionTypes';
 
-export const setSearchField = (text) => {
+export const setSearchField = (text: String) => {
     return {
         type: actionTypes.CHANGE_SEARCHFIELD,
         payload: text
@@ -8,7 +8,7 @@ export const setSearchField = (text) => {
 }
 
 // the middleware knows how to handle functions, it passes the dispatch method as an argument to the function, thus making it able to dispatch actions itself. 
-export const requestRobots = () => (dispatch) => {
+export const requestRobots = () => (dispatch: any) => {
     dispatch({ type: actionTypes.REQUEST_ROBOTS_PENDING });
 
     fetch("https://jsonplaceholder.typicode.com/users")

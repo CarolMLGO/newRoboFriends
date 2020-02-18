@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from "./Card";
 import styles from "./cardlist.module.scss";
+import { IRobot } from "../container/App";
 
-const CardList = ({ robots }) => {
+const CardList = ({ robots }: { robots: Array < IRobot > }) => {
     return (
         <div className={styles.CardList}>
         {

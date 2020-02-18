@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './card.module.scss';
+import { IRobot } from "../container/App";
 
-const Card = ({ name, email, id }) => {
+const Card = ({ name, email, id }: IRobot) => {
     return (
         <div className={styles.Card}>
             <img alt= "robots" width="200" height="200" src={`https://robohash.org/${id}?size=300x300`} />

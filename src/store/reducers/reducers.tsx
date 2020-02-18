@@ -4,7 +4,12 @@ const initialStateSearch = {
     searchField: ""
 }
 
-export const searchRobotsReducer = (state = initialStateSearch, action = {}) => {
+interface Iaction {
+    type ? : string,
+        payload ? : any
+}
+
+export const searchRobotsReducer = (state = initialStateSearch, action: Iaction = {}) => {
     switch (action.type) {
         case actionTypes.CHANGE_SEARCHFIELD:
             return {
@@ -22,7 +27,8 @@ const initialStateRobots = {
     robots: [],
     err: ''
 }
-export const requestRobotsReducer = (state = initialStateRobots, action = {}) => {
+
+export const requestRobotsReducer = (state = initialStateRobots, action: Iaction = {}) => {
     switch (action.type) {
         case actionTypes.REQUEST_ROBOTS_PENDING:
             return {

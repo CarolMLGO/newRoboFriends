@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 
-class ErrorBoundary extends Component {
-    constructor(props) {
+interface IEbProps {
+
+}
+
+interface IEbState {
+    hasError: boolean
+}
+
+class ErrorBoundary extends Component < IEbProps, IEbState > {
+    constructor(props: IEbProps) {
         super(props);
         this.state = {
             hasError: false
         }
     }
 
-    componentDidCatch(error, info) {
+    componentDidCatch() {
         this.setState({ hasError: true })
     }
 

@@ -10,7 +10,26 @@ import ErrorBoundary from "../components/ErrorBoundary";
 import { setSearchField, requestRobots } from '../store/actions/actions';
 import { connect } from 'react-redux';
 
-class App extends Component {
+export interface IRobot {
+    name: string,
+        email: string,
+        id: number
+}
+
+interface IEbProps {
+    onRobotsChange: any,
+        robots: Array < IRobot > ,
+        isPending: boolean,
+        onSearchChange: any,
+        searchField: string,
+
+}
+
+interface IEbState {
+
+}
+
+class App extends Component < IEbProps, IEbState > {
     // constructor(props) {
     // super(props);
     // this.state = {
@@ -19,7 +38,7 @@ class App extends Component {
     // }
     // }
 
-    componentDidMount() {
+    componentDidMount(): void {
         // fetch("https://jsonplaceholder.typicode.com/users")
         //     .then(resp => resp.json())
         //     .then(users => this.setState({
@@ -32,7 +51,7 @@ class App extends Component {
     //     this.setState({ searchfield: event.target.value })
     // }
 
-    render() {
+    render(): JSX.Element {
 
         const filteredrobots = this.props.robots.filter(robot => robot.name.toLowerCase().includes(this.props.searchField.toLowerCase()))
 
@@ -55,7 +74,7 @@ class App extends Component {
     }
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: any) => {
     return {
         searchField: state.seRR.searchField,
         isPending: state.reRR.isPending,
@@ -64,9 +83,9 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch: any) => {
     return {
-        onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+        onSearchChange: (event: any): void => dispatch(setSearchField(event.target.value)),
         onRobotsChange: () => dispatch(requestRobots())
     }
 }
