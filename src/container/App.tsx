@@ -12,16 +12,16 @@ import { connect } from 'react-redux';
 
 export interface IRobot {
     name: string,
-        email: string,
-        id: number
+    email: string,
+    id: number
 }
 
 interface IEbProps {
     onRobotsChange: any,
-        robots: Array < IRobot > ,
-        isPending: boolean,
-        onSearchChange: any,
-        searchField: string,
+    robots: Array < IRobot > ,
+    isPending: boolean,
+    onSearchChange: any,
+    searchField: string,
 
 }
 
